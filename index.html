@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <h2>Que1</h2>
+    <p>Write the code to access element which is having id as "text"</p>
+    <p>const text = document.getElementById("text");</p>
+    <h2>Que2</h2>
+    <p>Write the code to access element which is having tag as "h1"</p>
+    <p>const tag = document.getElementsByTagName("h1");</p>
+    <h2>Que3</h2>
+    <p>Write the code to access element which is having class as "box"</p>
+    <p>const class = document.getElementsByClassName("box");</p>
+    <h2>Que6</h2>
+    <h1 id="one">Hello</h1>
+    <p>document.getElementsByTagName(" h1").innerHTML="Hello World" ;</p>
+        <script>
+            const hello = document.getElementById("one");
+            hello.addEventListener('mouseover', function handleMouseOver() {
+                document.getElementById("one").innerHTML = "Hello World";
+            });
+           
+        </script>
+        <h2>Que7</h2>
+        <p>
+            Create three cards on HTML page and arrange them using flex property in
+            row or horizontal direction and also create button at the bottom named
+            "Change Flex direction". When user clicks on this button, the cards
+            arrangement should be changed to vertical direction.
+        </p>
+        <div id="box1">
+            <div style="background-color:crimson;">one</div>
+            <div style="background-color:cornflowerblue;">two</div>
+            <div style="background-color:cadetblue;">three</div>
+        </div>
+        <button onclick="changeDirection()">Click Here</button>
+
+        <h2>Que8</h2>
+        <p>What is the difference between window vs document?</p>
+        <b>Window: </b>It is the root object of all the objects in the javascript. This is called as a global object.
+
+        <b>Document:</b> Document is object like html, php etc which gets parsed inside the global object.
+
+        we can access document properties by using window.document.property or just by using document.property
+        <h2>Que10</h2>
+        <h1 id="heading">Hello</h1>
+       
+        <h2>Que10</h2>
+        <p>Create an HTML page having content as Hello world and a button named Replace Text. When user will click on
+            this
+            button page content should be changed to "Welcome to Elevation academy".</p>
+        <h1 id="content">Hello World</h1>
+        <button id="replaceBtn" onclick="replaceText()">Replace Text</button>
+
+
+
+        <h2>Que9</h2>
+        <p>Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every
+            second
+        </p>
+        <div class="container">
+            <div class="timer">
+                <span class="duration">
+                    <span id="clock-hours" class="count">10</span>
+                    <span class="unit">hrs</span>
+                </span>
+                <div class="timer__separator__dots">
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                </div>
+                <span class="duration">
+                    <span id="clock-minutes" class="count">00</span>
+                    <span class="unit">mts</span>
+                </span>
+                <div class="timer__separator__dots">
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                </div>
+                <span class="duration">
+                    <span id="clock-seconds" class="count">01</span>
+                    <span class="unit">secs</span>
+                </span>
+                <span id="clock-period" class="period"> AM </span>
+                <img src="" alt="" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Que12</h2>
+        <p>Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</p>
+        <div>
+            <select name="year" id="year">Year
+                <option value="20-21">20-21</option>
+                <option value="21-22">21-22</option>
+            </select>
+        </div> <br>
+        <button id="showYear" onclick="displayYear()">Select Year</button> <br>
+        <p id="displayYear"></p> <br>
+
+        <h2>Que13</h2>
+        <p>"Create a form having name ,email, phone no. , birth year
+            Add validations - phone no. should start with 91 , it should be 10 digits email should be domain
+            prepbytes.com
+            birth year should be > 95"</p>
+        <form name="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> <br>
+            <label for="phone">Phone Num:</label>
+            <input type="text" id="phone" name="phone"> <br>
+            <label for="year">DoB:</label>
+            <input type="number" id="year" name="year"> <br>
+            <input type="submit" value="Submit" onclick="validateForm()">
+        </form>
+
+        <script src=" ./script.js"></script>
+
+</html>
